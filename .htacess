@@ -1,0 +1,82 @@
+# =====================================================
+# 🔒 SEGURANÇA E OTIMIZAÇÃO - GOTRACK RASTREAMENTO
+# =====================================================
+
+# Forçar HTTPS (redireciona todo o tráfego para HTTPS)
+RewriteEngine On
+RewriteCond %{HTTPS} !=on
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# Remover barra final da URL (SEO friendly)
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.+)/$ /$1 [R=301,L]
+
+# Desativar listagem de diretórios (segurança)
+Options -Indexes
+
+# Ocultar informações do servidor
+ServerSignature Off
+ServerTokens Prod
+
+# Proteção básica contra acesso a arquivos sensíveis
+<FilesMatch "\.(htaccess|env|log|ini|sh|sql|bak|conf|json)$">
+    Order Allow,Deny
+    Deny from all
+</FilesMatch>
+
+# Bloquear hotlinking de imagens (protege tua banda)
+RewriteCond %{HTTP_REFERER} !^$
+RewriteCond %{HTTP_REFERER} !^https://(www\.)?gotrack\.com\.br [NC]
+RewriteRule \.(jpg|jpeg|png|gif|webp)$ - [F,NC,L]
+
+# =====================================================
+# ⚡ DESEMPENHO E CACHE
+# =====================================================
+
+# Ativar cache do navegador
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType image/jpg "access plus 1 year"
+  ExpiresByType image/jpeg "access plus 1 year"
+  ExpiresByType image/gif "access plus 1 year"
+  ExpiresByType image/png "access plus 1 year"
+  ExpiresByType image/webp "access plus 1 year"
+  ExpiresByType text/css "access plus 1 month"
+  ExpiresByType application/javascript "access plus 1 month"
+  ExpiresByType text/html "access plus 1 day"
+</IfModule>
+
+# Compressão GZIP
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript application/javascript application/json
+</IfModule>
+
+# Cache-Control para navegadores modernos
+<IfModule mod_headers.c>
+  <FilesMatch "\.(jpg|jpeg|png|gif|webp|css|js)$">
+    Header set Cache-Control "max-age=2592000, public"
+  </FilesMatch>
+</IfModule>
+
+# =====================================================
+# 🔍 SEO BÁSICO
+# =====================================================
+
+# Página de erro personalizada
+ErrorDocument 404 /404.html
+
+# Forçar domínio com www (opcional - descomente se quiser)
+# RewriteCond %{HTTP_HOST} !^www\. [NC]
+# RewriteRule ^(.*)$ https://www.%{HTTP_HOST}/$1 [L,R=301]
+
+# =====================================================
+# 🚫 BLOQUEIOS OPCIONAIS (descomente se quiser)
+# =====================================================
+# Bloquear acesso via IP específico
+# Deny from 123.45.67.89
+#
+# Bloquear bots ruins
+# SetEnvIfNoCase User-Agent "MJ12bot" bad_bot
+# Order Allow,Deny
+# Allow from all
+# Deny from env=bad_bot

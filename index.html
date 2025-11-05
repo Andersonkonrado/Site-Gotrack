@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Gotrack Rastreamento - Home</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <!-- Header / Navbar -->
+    <header class="site-header">
+        <div class="wrap">
+            <a class="brand" href="index.html">
+                <img src="img/logo atualizada branca.png" alt="Gotrack logo" class="logo" />
+            </a>
+
+            <button id="btn-mobile" class="btn-mobile" aria-label="Abrir menu">
+                <span class="hamburger"></span>
+            </button>
+
+            <nav class="nav" id="nav">
+                <ul>
+                    <li><a href="index.html" class="nav-link active">Home</a></li>
+                    <li><a href="produtos.html" class="nav-link">Produtos</a></li>
+                    <li><a href="#planos" class="nav-link">Planos</a></li>
+                    <li><a href="sobre.html" class="nav-link">Sobre</a></li>
+                    <li><a href="contato.html" class="nav-link">Contato</a></li>
+                    <li><a class="btn btn-ghost" href="area-cliente.html" target="_blank" rel="noopener">Área do
+                            Cliente</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-header">
+            <h1>Proteja seu veículo agora – Rastreador com e sem mensalidade</h1>
+            <p>Monitore em tempo real pelo celular. Sem burocracia, sem fidelidade.</p>
+            <div class="trust-badges">
+                <div class="badge">⭐⭐⭐⭐⭐ 4.9/5 avaliações</div>
+                <div class="badge">🔒 Pagamento 100% seguro</div>
+                <div class="badge">🚚 Entrega em todo Brasil</div>
+            </div>
+        </div>
+
+        <div class="carousel-container">
+            <button class="carousel-arrow prev" onclick="prevSlide()">‹</button>
+            <button class="carousel-arrow next" onclick="nextSlide()">›</button>
+
+            <div class="carousel-wrapper" id="carouselWrapper">
+                <!-- Slide 1 -->
+                <div class="carousel-slide">
+                    <div class="slide-image">
+                        <img src="img/moto.jpg" alt="">
+                    </div>
+                    <div class="slide-content">
+                        <h2>Rastreamento <b>COMODATO</b></h2>
+                        <p>Planos a partir de R$50,00 mensais, com a primeira mensalidade para 30 dias após a instalação, suporte total 24hrs.</p>
+                        <div class="slide-buttons">
+                            <a href="https://wa.me/558541417831?text=Ol%C3%A1%20Gotrack%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es." class="btn btn-primary" target="_blank">CONTRATAR AGORA</a>
+                            <a href="#como-funciona" class="btn btn-secondary">SABER MAIS</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="carousel-slide">
+                    <div class="slide-image">
+                        <img src="img/carro.jpg" alt="">
+                    </div>
+                    <div class="slide-content">
+                        <h2>Rastreamento <b>AUTO GESTÃO</b></h2>
+                        <p>Compre o equipamento que melhor atenderá sua necesidade, tenha total controle na palma da sua mão.</p>
+                        <div class="slide-buttons">
+                            <a href="produtos.html" class="btn btn-primary">COMPRAR</a>
+                            <a href="#como-funciona" class="btn btn-secondary">SABER MAIS</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-controls">
+                <button class="carousel-dot active" onclick="goToSlide(0)"></button>
+                <button class="carousel-dot" onclick="goToSlide(1)"></button>
+            </div>
+        </div>
+    </section>
+
+    <!--VIDEO -->
+    <section class="video-section">
+        <div class="video-container">
+            <!-- Miniatura leve do YouTube -->
+            <div class="video-wrapper" onclick="loadVideo(this)" data-video="XYZ123">
+                <img src="https://www.youtube.com/watch?v=Pi-718LmGKk&t=8s" alt="Demonstração do Rastreador Veicular"
+                    loading="lazy">
+                <div class="play-button">▶</div>
+            </div>
+        </div>
+
+        <div class="video-text">
+            <h2>Veja como o rastreador funciona na prática</h2>
+            <p>Assista à demonstração completa e descubra como nosso rastreador veicular localiza seu carro em tempo
+                real, envia alertas de movimento e permite bloqueio remoto — tudo direto do seu celular.</p>
+            <ul>
+                <li>🚗 Rastreamento em tempo real</li>
+                <li>🔒 Bloqueio remoto via app</li>
+                <li>📍 Histórico e cercas virtuais</li>
+            </ul>
+            <a href="#planos" class="cta-button">Escolher meu plano</a>
+        </div>
+    </section>
+
+    <!-- Como Funciona -->
+    <section class="section" id="como-funciona">
+        <div class="section-header">
+            <h2>Como Funciona</h2>
+            <p>Proteja seu veículo em 3 passos simples</p>
+        </div>
+        <div class="steps">
+            <div class="step">
+                <div class="step-number">1</div>
+                <h3>Instale o rastreador</h3>
+                <p>Após o cadastro, no plano COMODATO enviamos nosso técnico em até 24hrs, no AUTO GESTÃO nossa equipe dará total suporte na instalação, indicando um técnico, ou auxiliando o cliente caso o mesmo queira realizar a instalação.</p>
+            </div>
+            <div class="step">
+                <div class="step-number">2</div>
+                <h3>Acompanhe pelo app</h3>
+                <p>Baixe nosso app gratuito e monitore seu veículo em tempo real de qualquer lugar, tenha acesso a velocidade, Street view do Google, relatórios e muito mais.</p>
+            </div>
+            <div class="step">
+                <div class="step-number">3</div>
+                <h3>Pagamento</h3>
+                <p>A primeira mensalidade é cobrada 30 dias após a instalação, opções de PIX e boletos enviados via email, SMS e Whatsaap sempre antes do vencimento. </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comparativo -->
+    <section class="section">
+        <div class="section-header">
+            <h2>Com ou Sem Mensalidade?</h2>
+            <p>Escolha o plano ideal para suas necessidades</p>
+        </div>
+        <div class="comparison">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Característica</th>
+                        <th>Auto Gestão</th>
+                        <th>Comodato</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Pagamento</strong></td>
+                        <td>Somente os dados da linha</td>
+                        <td>Mensal</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Aplicativo</strong></td>
+                        <td>Incluído, básico</td>
+                        <td>App premium com histórico completo</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Suporte</strong></td>
+                        <td>Padrão</td>
+                        <td>Suporte 24h prioritário</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Equipamento</strong></td>
+                        <td>Cliente compra</td>
+                        <td>Comodato</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Indicado para</strong></td>
+                        <td>Pessoa física</td>
+                        <td>Pesoa física, frotas e empresas</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="comparison-cta">
+                <a href="#planos" class="btn btn-primary">Quero sem mensalidade</a>
+                <a href="#planos" class="btn btn-secondary">Quero suporte completo</a>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Benefícios -->
+    <section class="section">
+        <div class="section-header">
+            <h2>Por que escolher nosso rastreador?</h2>
+            <p>Tecnologia de ponta com o melhor custo-benefício</p>
+        </div>
+        <div class="benefits">
+            <div class="benefit">
+                <div class="benefit-icon">📍</div>
+                <h3>Rastreamento em tempo real</h3>
+                <p>Veja a localização exata do seu veículo a qualquer momento, direto no seu celular.</p>
+            </div>
+            <div class="benefit">
+                <div class="benefit-icon">🔔</div>
+                <h3>Alertas inteligentes</h3>
+                <p>Receba notificações de ignição, movimento e saída de área pré-definida.</p>
+            </div>
+            <div class="benefit">
+                <div class="benefit-icon">📊</div>
+                <h3>Histórico de rotas</h3>
+                <p>Acesse relatórios completos de trajetos e paradas do seu veículo.</p>
+            </div>
+            <div class="benefit">
+                <div class="benefit-icon">🔐</div>
+                <h3>Bloqueio remoto</h3>
+                <p>Bloqueie o motor do veículo remotamente em caso de emergência (plano premium).</p>
+            </div>
+            <div class="benefit">
+                <div class="benefit-icon">💬</div>
+                <h3>Suporte técnico</h3>
+                <p>Equipe brasileira pronta para te ajudar sempre que precisar.</p>
+            </div>
+            <div class="benefit">
+                <div class="benefit-icon">✅</div>
+                <h3>Sem fidelidade</h3>
+                <p>Cancele quando quiser, sem multas ou taxas de cancelamento.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Planos -->
+    <section class="section" id="planos">
+        <div class="section-header">
+            <h2>Escolha seu plano</h2>
+            <p>Transparência total, sem taxas escondidas</p>
+        </div>
+        <div class="pricing">
+            <div class="pricing-card">
+                <h3>Auto gestão</h3>
+                <div class="pricing-price">
+                    R$ 149,00
+                    <small>A partir</small>
+                </div>
+                <ul class="pricing-features">
+                    <li>Rastreador completo</li>
+                    <li>App básico incluído</li>
+                    <li>Rastreamento em tempo real</li>
+                    <li>Alertas de movimento</li>
+                    <li>Suporte padrão</li>
+                    <li>Sem mensalidade</li>
+                    <li>Garantia de 1 ano</li>
+                    <ul>(Rastreadores a partir de R$149,90.)</ul>
+                </ul>
+                <a href="produtos.html" class="btn btn-primary">Comprar agora</a>
+            </div>
+            <div class="pricing-card featured">
+                <div class="pricing-badge">Mais Popular</div>
+                <h3>Comodato</h3>
+                <div class="pricing-price">
+
+                    <small>A partir de</small>
+                    R$ 49,90
+                    <small>/mês</small>
+                </div>
+                <ul class="pricing-features">
+                    <li>Rastreador completo</li>
+                    <li>App premium completo</li>
+                    <li>Histórico ilimitado</li>
+                    <li>Bloqueio remoto</li>
+                    <li>Suporte 24h prioritário</li>
+                    <li>Relatórios avançados</li>
+                    <li>Garantia estendida</li>
+                </ul>
+                <a href="https://wa.me/558541417831?text=Ol%C3%A1%20Gotrack%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es." class="btn btn-primary" class="btn btn-primary" target="_blank">Assinar agora</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Por que escolher -->
+    <section class="section">
+        <div class="why-choose">
+            <h2>Por que nos escolher?</h2>
+            <div class="stats">
+                <div class="stat">
+                    <div class="stat-number">+10</div>
+                    <div class="stat-label">Desde 2013</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">99%</div>
+                    <div class="stat-label">Rastreadores ativos</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">4.9★</div>
+                    <div class="stat-label">Avaliação média</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section" id="faq">
+        <div class="section-header">
+            <h2>Perguntas Frequentes</h2>
+            <p>Tire suas dúvidas sobre nossos rastreadores</p>
+        </div>
+        <div class="faq">
+            <div class="faq-item">
+                <button class="faq-question" onclick="toggleFaq(0)">
+                    Posso instalar sozinho?
+                    <span class="faq-icon">▼</span>
+                </button>
+                <div class="faq-answer">
+                    Sim! Nosso rastreador foi desenvolvido para instalação simples. Enviamos um manual completo e vídeos
+                    explicativos. Se preferir, também indicamos profissionais parceiros.
+                    No COMODATO a instalação é inclusa.
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question" onclick="toggleFaq(1)">
+                    Funciona em qualquer veículo?
+                    <span class="faq-icon">▼</span>
+                </button>
+                <div class="faq-answer">
+                    Sim! Nosso rastreador é compatível com carros, motos, caminhões e até frotas. Funciona em qualquer
+                    veículo
+                    com bateria 12V ou 24V.
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question" onclick="toggleFaq(2)">
+                    O que acontece se eu vender o carro com o meu equipamento?
+                    <span class="faq-icon">▼</span>
+                </button>
+                <div class="faq-answer">
+                    Você pode remover o rastreador e instalar em outro veículo sem custo adicional. O equipamento é seu!
+                    Basta
+                    reconfigurar no app.
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question" onclick="toggleFaq(3)">
+                    Tem garantia?
+                    <span class="faq-icon">▼</span>
+                </button>
+                <div class="faq-answer">
+                    Sim! Todos os rastreadores têm garantia de 1 ano contra defeitos de fabricação. No plano premium, a
+                    garantia
+                    é estendida.
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question" onclick="toggleFaq(4)">
+                    O rastreador é realmente meu?
+                    <span class="faq-icon">▼</span>
+                </button>
+                <div class="faq-answer">
+                    Sim! Diferente do comodato, você compra o equipamento. Não há devolução obrigatória e você pode usar
+                    pelo
+                    tempo que quiser, sem mensalidades no plano único.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Depoimentos -->
+    <section class="py-16 px-4 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900">
+        <div class="max-w-7xl mx-auto">
+            <!-- Cabeçalho da Seção -->
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-white mb-4">O Que Nossos Clientes Dizem</h2>
+                <p class="text-gray-300 text-lg">Depoimentos reais do Facebook sobre nosso serviço de rastreamento</p>
+                <div class="flex items-center justify-center gap-2 mt-4">
+                    <i class="fab fa-facebook text-blue-500 text-2xl"></i>
+                    <span class="text-gray-400">Avaliações do Facebook</span>
+                </div>
+            </div>
+
+            <!-- Grid de Depoimentos -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                <!-- Depoimento 1 -->
+                <div
+                    class="bg-white rounded-lg p-6 shadow-lg hover:shadow-xl transition-shadow duration-300 hover:-translate-y-1 transform">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div
+                            class="w-12 h-12 bg-gradient-to-br from-red-500 to-red-600 rounded-full flex items-center justify-center text-white font-bold text-lg">
+                            MC
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-gray-900">Maria Clara Silva</h3>
+                            <div class="flex items-center gap-1">
+                                <i class="fab fa-facebook text-blue-600 text-sm"></i>
+                                <span class="text-gray-500 text-sm">há 2 semanas</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex gap-1 mb-3">
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                    </div>
+                    <p class="text-gray-700 leading-relaxed">
+                        "Excelente serviço! O rastreamento é preciso e o atendimento é muito atencioso. Já indiquei para
+                        vários
+                        amigos. Meu carro está sempre seguro com a GoTrack!"
+                    </p>
+                </div>
+
+                <!-- Depoimento 2 -->
+                <div
+                    class="bg-white rounded-lg p-6 shadow-lg hover:shadow-xl transition-shadow duration-300 hover:-translate-y-1 transform">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div
+                            class="w-12 h-12 bg-gradient-to-br from-red-500 to-red-600 rounded-full flex items-center justify-center text-white font-bold text-lg">
+                            JS
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-gray-900">João Santos</h3>
+                            <div class="flex items-center gap-1">
+                                <i class="fab fa-facebook text-blue-600 text-sm"></i>
+                                <span class="text-gray-500 text-sm">há 1 mês</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex gap-1 mb-3">
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                    </div>
+                    <p class="text-gray-700 leading-relaxed">
+                        "Melhor custo-benefício de Fortaleza! A tecnologia é de ponta e consigo acompanhar minha frota
+                        em tempo
+                        real. Recomendo demais!"
+                    </p>
+                </div>
+
+                <!-- Depoimento 3 -->
+                <div
+                    class="bg-white rounded-lg p-6 shadow-lg hover:shadow-xl transition-shadow duration-300 hover:-translate-y-1 transform">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div
+                            class="w-12 h-12 bg-gradient-to-br from-red-500 to-red-600 rounded-full flex items-center justify-center text-white font-bold text-lg">
+                            AP
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-gray-900">Ana Paula Oliveira</h3>
+                            <div class="flex items-center gap-1">
+                                <i class="fab fa-facebook text-blue-600 text-sm"></i>
+                                <span class="text-gray-500 text-sm">há 3 semanas</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex gap-1 mb-3">
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                    </div>
+                    <p class="text-gray-700 leading-relaxed">
+                        "Estou muito satisfeita! O aplicativo é fácil de usar e o suporte sempre me atende rapidamente.
+                        Sinto
+                        muito mais segurança agora."
+                    </p>
+                </div>
+
+                <!-- Depoimento 4 
+                <div
+                    class="bg-white rounded-lg p-6 shadow-lg hover:shadow-xl transition-shadow duration-300 hover:-translate-y-1 transform">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div
+                            class="w-12 h-12 bg-gradient-to-br from-red-500 to-red-600 rounded-full flex items-center justify-center text-white font-bold text-lg">
+                            RF
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-gray-900">Roberto Ferreira</h3>
+                            <div class="flex items-center gap-1">
+                                <i class="fab fa-facebook text-blue-600 text-sm"></i>
+                                <span class="text-gray-500 text-sm">há 5 dias</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex gap-1 mb-3">
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                    </div>
+                    <p class="text-gray-700 leading-relaxed">
+                        "Profissionais extremamente competentes! A instalação foi rápida e o sistema funciona
+                        perfeitamente. Vale
+                        cada centavo investido!"
+                    </p>
+                </div>
+
+                 Depoimento 5 -
+                <div
+                    class="bg-white rounded-lg p-6 shadow-lg hover:shadow-xl transition-shadow duration-300 hover:-translate-y-1 transform">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div
+                            class="w-12 h-12 bg-gradient-to-br from-red-500 to-red-600 rounded-full flex items-center justify-center text-white font-bold text-lg">
+                            LC
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-gray-900">Luciana Costa</h3>
+                            <div class="flex items-center gap-1">
+                                <i class="fab fa-facebook text-blue-600 text-sm"></i>
+                                <span class="text-gray-500 text-sm">há 1 semana</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex gap-1 mb-3">
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                    </div>
+                    <p class="text-gray-700 leading-relaxed">
+                        "Empresa séria e confiável! Uso há mais de 2 anos e nunca tive problemas. O rastreamento é
+                        preciso e o
+                        preço é justo. Super recomendo!"
+                    </p>
+                </div>
+
+                Depoimento 6 
+                <div
+                    class="bg-white rounded-lg p-6 shadow-lg hover:shadow-xl transition-shadow duration-300 hover:-translate-y-1 transform">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div
+                            class="w-12 h-12 bg-gradient-to-br from-red-500 to-red-600 rounded-full flex items-center justify-center text-white font-bold text-lg">
+                            PM
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-gray-900">Pedro Mendes</h3>
+                            <div class="flex items-center gap-1">
+                                <i class="fab fa-facebook text-blue-600 text-sm"></i>
+                                <span class="text-gray-500 text-sm">há 4 dias</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex gap-1 mb-3">
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                    </div>
+                    <p class="text-gray-700 leading-relaxed">
+                        "Atendimento nota 10! Tiraram todas as minhas dúvidas e a instalação foi super rápida. Estou
+                        muito
+                        satisfeito com o serviço da GoTrack!"
+                    </p>
+                </div>-->
+
+            </div>
+
+            <!-- Call to Action -->
+            <div class="text-center mt-12">
+                <a href="https://www.facebook.com/Gotracktecnologia?locale=pt_BR" target="_blank"
+                    class="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white font-semibold px-8 py-3 rounded-lg transition-colors duration-300 shadow-lg hover:shadow-xl">
+                    <i class="fab fa-facebook"></i>
+                    Ver Mais Avaliações no Facebook
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- CTA final -->
+    <section class="cta wrap">
+        <h2><b> Vamos proteger seu veículo?</b></h2>
+        <div class="cta-actions">
+            <a class="btn btn-lg" href="contato.html">Solicitar orçamento</a>
+            <a class="btn btn-outline" href="area-cliente.html" target="_blank" rel="noopener">Entrar na Área do
+                Cliente</a>
+        </div>
+    </section>
+
+
+
+    <!-- Footer -->
+    <footer class="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white">
+        <div class="max-w-7xl mx-auto px-6 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+
+                <!-- Logo e Descrição -->
+                <div class="flex flex-col items-start">
+                    <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/logo%20atualizada%20branca-Gy7QtfvgxyV8AMcOF1k5Q65nluTrsn.png"
+                        alt="GoTrack Rastreamento" class="h-16 w-auto mb-4 drop-shadow-lg">
+                    <p class="text-gray-300 text-sm leading-relaxed">
+                        Soluções completas em rastreamento veicular com tecnologia de ponta e atendimento personalizado.
+                    </p>
+                </div>
+
+                <!-- Contatos -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4 text-red-500">Contatos</h3>
+                    <div class="space-y-3">
+                        <div>
+                            <p class="text-sm font-medium text-gray-400 mb-1">Email Comercial:</p>
+                            <a href="mailto:comercial@gotrackrastreamento.com.br"
+                                class="text-sm text-gray-300 hover:text-red-500 transition-colors break-all">
+                                comercial@gotrackrastreamento.com.br
+                            </a>
+                        </div>
+                        <div>
+                            <p class="text-sm font-medium text-gray-400 mb-1">Email Financeiro:</p>
+                            <a href="mailto:financeiro@gotrackrastreamento.com.br"
+                                class="text-sm text-gray-300 hover:text-red-500 transition-colors break-all">
+                                financeiro@gotrackrastreamento.com.br
+                            </a>
+                        </div>
+                        <div>
+                            <p class="text-sm font-medium text-gray-400 mb-1">Telefones:</p>
+                            <div class="flex flex-col gap-1">
+                                <a href="tel:+558541417831"
+                                    class="text-sm text-gray-300 hover:text-red-500 transition-colors">
+                                    (85) 4141-7831
+                                </a>
+                                <a href="tel:+5585992313244"
+                                    class="text-sm text-gray-300 hover:text-red-500 transition-colors">
+                                    (85) 99231-3244
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Links do Site -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4 text-red-500">Navegação</h3>
+                    <ul class="space-y-2">
+                        <li>
+                            <a href="produtos.html"
+                                class="text-sm text-gray-300 hover:text-red-500 transition-colors hover:translate-x-1 inline-block">
+                                Produtos
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#planos"
+                                class="text-sm text-gray-300 hover:text-red-500 transition-colors hover:translate-x-1 inline-block">
+                                Planos
+                            </a>
+                        </li>
+                        <li>
+                            <a href="sobre.html"
+                                class="text-sm text-gray-300 hover:text-red-500 transition-colors hover:translate-x-1 inline-block">
+                                Sobre
+                            </a>
+                        </li>
+                        <li>
+                            <a href="area-cliente.html"
+                                class="text-sm text-gray-300 hover:text-red-500 transition-colors hover:translate-x-1 inline-block">
+                                Área Cliente
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Redes Sociais -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4 text-red-500">Redes Sociais</h3>
+                    <div class="flex flex-col gap-3">
+                        <a href="https://www.instagram.com/gotrackrastreamento/" target="_blank"
+                            rel="noopener noreferrer"
+                            class="flex items-center gap-3 text-gray-300 hover:text-red-500 transition-colors group">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                            </svg>
+                            <span class="text-sm">Instagram</span>
+                        </a>
+                        <a href="https://www.facebook.com/Gotracktecnologia?locale=pt_BR" target="_blank"
+                            rel="noopener noreferrer"
+                            class="flex items-center gap-3 text-gray-300 hover:text-red-500 transition-colors group">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                            </svg>
+                            <span class="text-sm">Facebook</span>
+                        </a>
+                        <a href="https://www.youtube.com/@gotrackrastreamento2018" target="_blank"
+                            rel="noopener noreferrer"
+                            class="flex items-center gap-3 text-gray-300 hover:text-red-500 transition-colors group">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+                            </svg>
+                            <span class="text-sm">YouTube</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <div class="border-t border-gray-700 mt-8 pt-6 text-center">
+                <p class="text-sm text-gray-400">
+                    © 2025 GoTrack Rastreamento. Todos os direitos reservados.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- WhatsApp floating button -->
+    <!-- Substitua YOURNUMBER (55DDDNÚMERO) => ex: 5511999999999 -->
+    <a class="whatsapp-fab"
+        href="https://wa.me/558541417831?text=Ol%C3%A1%20Gotrack%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es."
+        target="_blank" rel="noopener" aria-label="WhatsApp">
+        <img src="img/WhatsApp.svg.webp" alt="">
+        <!--<svg viewBox="0 0 24 24"><path d="M20.5 3.5A11 11 0 0012 1a11 11 0 00-9.5 5.5A10.8 10.8 0 002.1 12.1L1 17l4.9-1.2A10.8 10.8 0 0012 23a11 11 0 008.5-19.5zM12 21c-1.8 0-3.5-.5-5-1.4l-.4-.2L5 20l.7-1.6.1-.3A8.5 8.5 0 013.5 12 8.5 8.5 0 1112 21z"/></svg>-->
+    </a>
+    <script defer src="js/main.js"></script>
+</body>
+
+</html>
