@@ -4,6 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="shortcut icon" href="img/Icon-logo.png">
     <title>Gotrack Rastreamento - Home</title>
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -11,7 +12,8 @@
 </head>
 
 <body>
-    <!-- Header / Navbar -->
+  <!-- Header / Navbar -->
+     
     <header class="site-header">
         <div class="wrap">
             <a class="brand" href="index.html">
@@ -27,10 +29,10 @@
                     <li><a href="index.html" class="nav-link active">Home</a></li>
                     <li><a href="produtos.html" class="nav-link">Produtos</a></li>
                     <li><a href="#planos" class="nav-link">Planos</a></li>
-                    <li><a href="sobre.html" class="nav-link">Sobre</a></li>
-                    <li><a href="contato.html" class="nav-link">Contato</a></li>
-                    <li><a class="btn btn-ghost" href="area-cliente.html" target="_blank" rel="noopener">Área do
-                            Cliente</a></li>
+                    <li><a href="#sobre" class="nav-link">Sobre</a></li>
+                    <li><a href="#contato" class="nav-link">Contato</a></li>
+                    <li><a class="btn btn-ghost" href="#areadocliente" >Área do
+                    Cliente</a></li>
                 </ul>
             </nav>
         </div>
@@ -93,16 +95,153 @@
         </div>
     </section>
 
-    <!--VIDEO -->
-    <section class="video-section">
-        <div class="video-container">
-            <!-- Miniatura leve do YouTube -->
-            <div class="video-wrapper" onclick="loadVideo(this)" data-video="XYZ123">
-                <img src="https://www.youtube.com/watch?v=Pi-718LmGKk&t=8s" alt="Demonstração do Rastreador Veicular"
-                    loading="lazy">
-                <div class="play-button">▶</div>
-            </div>
+    <!--FAQ2-->
+<section class="how-it-works" id="como-funciona">
+  <div class="how-container">
+
+    <div class="how-head">
+      <h2>Como funciona na prática</h2>
+      <p>
+        Em poucos passos você já está protegido e com o controle total do seu veículo.
+      </p>
+    </div>
+
+    <div class="how-grid">
+
+      <div class="how-card">
+        <div class="how-number">1</div>
+        <h3>Escolha seu plano</h3>
+        <p>
+          Você pode optar pelo <strong>Auto Gestão</strong> (sem mensalidade)
+          ou pelo <strong>Plano Mensal</strong> com suporte total e central 24h.
+        </p>
+      </div>
+
+      <div class="how-card">
+        <div class="how-number">2</div>
+        <h3>Instalação rápida</h3>
+        <p>
+          Indicamos técnico parceiro para instalação. O processo é discreto,
+          rápido e seguro.
+        </p>
+      </div>
+
+      <div class="how-card">
+        <div class="how-number">3</div>
+        <h3>Controle total no App</h3>
+        <p>
+          Acompanhe <strong>em tempo real</strong>, receba alertas e consulte rotas.
+          Tudo pelo Android ou iPhone.
+        </p>
+      </div>
+
+    </div>
+
+    <div class="how-cta">
+      <div class="how-cta-box">
+        <h3>Quer ativar ainda hoje?</h3>
+        <p>
+          Clique no botão abaixo e fale com um atendente.  
+          A instalação pode ser agendada rapidamente.
+        </p>
+
+        <a class="how-btn" href="#contato">
+          🚀 Quero rastrear agora
+        </a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+    <!--AREA CLIENTE-->
+   
+     <section class="app-download" id="areadocliente">
+  <div class="app-container">
+
+    <!-- LADO DA IMAGEM -->
+    <div class="app-image">
+      <img src="img/Capa area do cliente.png" alt="Aplicativo de Rastreamento">
+    </div>
+
+    <!-- LADO DAS INFORMAÇÕES -->
+    <div class="app-content">
+      <h2>Baixe o App e tenha o controle total do seu veículo</h2>
+      <p>
+        Com o nosso aplicativo você acompanha tudo em tempo real: localização, alertas,
+        histórico de rotas e muito mais. Tudo na palma da sua mão.
+      </p>
+
+      <ul class="app-benefits">
+        <li>📍 Localização em tempo real</li>
+        <li>🚨 Alertas inteligentes e segurança</li>
+        <li>🛑 Função bloqueio e anti-remoção</li>
+        <li>🧭 Histórico completo de rotas</li>
+      </ul>
+
+      <!-- BOTÕES -->
+      <div class="app-buttons">
+        <a href="https://apps.apple.com/br/app/rastro-system-3-0/id6474566461" class="btn-store google" target="_blank">
+          <img src="img/app store.png" alt="">
+        </a>
+
+        <a href="https://play.google.com/store/apps/details?id=br.com.rs.rastrosystem3" class="btn-store apple" target="_blank">
+          <img src="img/play store.png" alt="">
+        </a>
+      </div>
+
+      <small class="app-note">
+        Compatível com Android e iPhone. Download gratuito.
+      </small>
+    </div>
+
+  </div>
+  <!--PLATAFORMA-->
+  <section class="client-access">
+  <div class="client-access-container">
+
+    <div class="client-access-box">
+
+      <div class="client-access-text">
+        <h2>Já é cliente? <span>Acesse sua plataforma</span></h2>
+
+        <p>
+          Faça login para acompanhar seu veículo em tempo real, consultar histórico,
+          alertas e gerenciar sua conta com total segurança.
+        </p>
+
+        <div class="client-access-tags">
+          <span>📍 Rastreamento ao vivo</span>
+          <span>🚨 Alertas</span>
+          <span>🧾 Histórico</span>
+          <span>⚙️ Gestão</span>
         </div>
+      </div>
+
+      <div class="client-access-action">
+        <a class="client-access-btn"
+          href="https://gotrack.rastrosystem.com.br/acl/login/?next=/"
+          target="_blank">
+          🔐 Acessar Plataforma
+        </a>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+
+    <!--VIDEO -->
+ <section class="video-section">
+        
+            <!-- Miniatura leve do YouTube -->
+            <div class="video-container">   
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/Pi-718LmGKk?si=M1qAks69f2Gjnj-m" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>>
 
         <div class="video-text">
             <h2>Veja como o rastreador funciona na prática</h2>
@@ -116,83 +255,6 @@
             <a href="#planos" class="cta-button">Escolher meu plano</a>
         </div>
     </section>
-
-    <!-- Como Funciona -->
-    <section class="section" id="como-funciona">
-        <div class="section-header">
-            <h2>Como Funciona</h2>
-            <p>Proteja seu veículo em 3 passos simples</p>
-        </div>
-        <div class="steps">
-            <div class="step">
-                <div class="step-number">1</div>
-                <h3>Instale o rastreador</h3>
-                <p>Após o cadastro, no plano COMODATO enviamos nosso técnico em até 24hrs, no AUTO GESTÃO nossa equipe dará total suporte na instalação, indicando um técnico, ou auxiliando o cliente caso o mesmo queira realizar a instalação.</p>
-            </div>
-            <div class="step">
-                <div class="step-number">2</div>
-                <h3>Acompanhe pelo app</h3>
-                <p>Baixe nosso app gratuito e monitore seu veículo em tempo real de qualquer lugar, tenha acesso a velocidade, Street view do Google, relatórios e muito mais.</p>
-            </div>
-            <div class="step">
-                <div class="step-number">3</div>
-                <h3>Pagamento</h3>
-                <p>A primeira mensalidade é cobrada 30 dias após a instalação, opções de PIX e boletos enviados via email, SMS e Whatsaap sempre antes do vencimento. </p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Comparativo -->
-    <section class="section">
-        <div class="section-header">
-            <h2>Com ou Sem Mensalidade?</h2>
-            <p>Escolha o plano ideal para suas necessidades</p>
-        </div>
-        <div class="comparison">
-            <table>
-                <thead>
-                    <tr>
-                        <th>Característica</th>
-                        <th>Auto Gestão</th>
-                        <th>Comodato</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><strong>Pagamento</strong></td>
-                        <td>Somente os dados da linha</td>
-                        <td>Mensal</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Aplicativo</strong></td>
-                        <td>Incluído, básico</td>
-                        <td>App premium com histórico completo</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Suporte</strong></td>
-                        <td>Padrão</td>
-                        <td>Suporte 24h prioritário</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Equipamento</strong></td>
-                        <td>Cliente compra</td>
-                        <td>Comodato</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Indicado para</strong></td>
-                        <td>Pessoa física</td>
-                        <td>Pesoa física, frotas e empresas</td>
-                    </tr>
-                </tbody>
-            </table>
-            <div class="comparison-cta">
-                <a href="#planos" class="btn btn-primary">Quero sem mensalidade</a>
-                <a href="#planos" class="btn btn-secondary">Quero suporte completo</a>
-            </div>
-        </div>
-    </section>
-
-
 
     <!-- Benefícios -->
     <section class="section">
@@ -235,73 +297,153 @@
     </section>
 
     <!-- Planos -->
-    <section class="section" id="planos">
-        <div class="section-header">
-            <h2>Escolha seu plano</h2>
-            <p>Transparência total, sem taxas escondidas</p>
-        </div>
-        <div class="pricing">
-            <div class="pricing-card">
-                <h3>Auto gestão</h3>
-                <div class="pricing-price">
-                    R$ 149,00
-                    <small>A partir</small>
-                </div>
-                <ul class="pricing-features">
-                    <li>Rastreador completo</li>
-                    <li>App básico incluído</li>
-                    <li>Rastreamento em tempo real</li>
-                    <li>Alertas de movimento</li>
-                    <li>Suporte padrão</li>
-                    <li>Sem mensalidade</li>
-                    <li>Garantia de 1 ano</li>
-                    <ul>(Rastreadores a partir de R$149,90.)</ul>
-                </ul>
-                <a href="produtos.html" class="btn btn-primary">Comprar agora</a>
-            </div>
-            <div class="pricing-card featured">
-                <div class="pricing-badge">Mais Popular</div>
-                <h3>Comodato</h3>
-                <div class="pricing-price">
+    <section class="plans" id="planos">
+  <div class="plans-container">
 
-                    <small>A partir de</small>
-                    R$ 49,90
-                    <small>/mês</small>
-                </div>
-                <ul class="pricing-features">
-                    <li>Rastreador completo</li>
-                    <li>App premium completo</li>
-                    <li>Histórico ilimitado</li>
-                    <li>Bloqueio remoto</li>
-                    <li>Suporte 24h prioritário</li>
-                    <li>Relatórios avançados</li>
-                    <li>Garantia estendida</li>
-                </ul>
-                <a href="https://wa.me/558541417831?text=Ol%C3%A1%20Gotrack%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es." class="btn btn-primary" class="btn btn-primary" target="_blank">Assinar agora</a>
-            </div>
-        </div>
-    </section>
+    <div class="plans-head">
+      <h2>Escolha o plano ideal para o seu perfil</h2>
+      <p>
+        Você pode ter o rastreamento com <strong>autonomia total</strong> (sem mensalidade),
+        ou com <strong>suporte completo</strong> e central 24h para máxima segurança.
+      </p>
+    </div>
 
-    <!-- Por que escolher -->
-    <section class="section">
-        <div class="why-choose">
-            <h2>Por que nos escolher?</h2>
-            <div class="stats">
-                <div class="stat">
-                    <div class="stat-number">+10</div>
-                    <div class="stat-label">Desde 2013</div>
-                </div>
-                <div class="stat">
-                    <div class="stat-number">99%</div>
-                    <div class="stat-label">Rastreadores ativos</div>
-                </div>
-                <div class="stat">
-                    <div class="stat-number">4.9★</div>
-                    <div class="stat-label">Avaliação média</div>
-                </div>
-            </div>
+    <div class="plans-grid">
+
+      <!-- PLANO AUTO GESTÃO -->
+      <div class="plan-card plan-card-dark">
+        <div class="plan-top">
+          <span class="plan-badge">🔥 Mais econômico</span>
+          <h3>Plano Auto Gestão</h3>
+          <p class="plan-subtitle">
+            Ideal para quem quer rastrear sem mensalidade e ter o equipamento como patrimônio.
+          </p>
         </div>
-    </section>
+
+        <div class="plan-price">
+          <span class="price-title">Sem mensalidade</span>
+          <span class="price-value">R$ 0</span>
+          <span class="price-note">Você paga apenas o chip M2M (plano de dados)</span>
+        </div>
+
+        <ul class="plan-features">
+          <li>✅ Você compra o rastreador (equipamento é seu)</li>
+          <li>✅ Indicamos técnico para instalação (rápido e seguro)</li>
+          <li>✅ Acompanhamento via App Android e iOS</li>
+          <li>✅ Localização em tempo real + histórico de rotas</li>
+          <li>✅ Alertas essenciais (ignição, movimento, cerca virtual)</li>
+          <li>✅ Gestão total por você (controle do seu veículo)</li>
+          <li>✅ Melhor custo-benefício a longo prazo</li>
+        </ul>
+
+        <div class="plan-highlight">
+          <strong>Perfeito para:</strong> motoristas particulares, frotas pequenas, quem quer economizar sem abrir mão do rastreamento.
+        </div>
+
+        <div class="plan-actions">
+          <a href="https://wa.me/558541417831?text=Ol%C3%A1%20Gotrack%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es." class="btn-plan btn-outline"target="_blank" rel="noopener" aria-label="WhatsApp">
+            Quero o Auto Gestão
+          </a>
+        </div>
+      </div>
+
+      <!-- PLANO MENSAL -->
+      <div class="plan-card plan-card-red">
+        <div class="plan-top">
+          <span class="plan-badge plan-badge-strong">⭐ Mais completo</span>
+          <h3>Plano com Mensalidade</h3>
+          <p class="plan-subtitle">
+            Para quem quer tranquilidade total, suporte técnico e central 24h especializada.
+          </p>
+        </div>
+
+        <div class="plan-price">
+          <span class="price-title">A partir de</span>
+          <span class="price-value">R$ 49,90</span>
+          <span class="price-note">mensais • adesão grátis • 30 dias grátis*</span>
+        </div>
+
+        <ul class="plan-features">
+          <li>✅ Equipamento em comodato (você não compra)</li>
+          <li>✅ Central 24h treinada para recuperação</li>
+          <li>✅ Suporte total em caso de roubo ou furto</li>
+          <li>✅ Assistência técnica em caso de falhas do rastreador</li>
+          <li>✅ Alertas inteligentes + monitoramento ativo</li>
+          <li>✅ Atendimento humano e rápido</li>
+          <li>✅ Ideal para quem quer “zero dor de cabeça”</li>
+        </ul>
+
+        <div class="plan-highlight">
+          <strong>Diferencial:</strong> em situações críticas, você não fica sozinho — nossa equipe assume a linha de frente.
+        </div>
+
+        <div class="plan-actions">
+          <a href="https://wa.me/558541417831?text=Ol%C3%A1%20Gotrack%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es." class="btn-plan btn-solid" target="_blank" rel="noopener" aria-label="WhatsApp">
+            Quero o Plano Mensal
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    <p class="plans-footnote">
+      *Condições podem variar conforme cidade, veículo e disponibilidade. Fale com um atendente para confirmar.
+    </p>
+
+  </div>
+</section>
+
+<!--FALE CONOSCO-->
+<main class="wrap section contact-light" id="contato">
+
+    <h1>Fale conosco</h1>
+    <p class="section-sub">Preencha o formulário ou contate-nos pelo WhatsApp.</p>
+
+    <div class="grid contact-grid">
+      <section class="contact-form reveal">
+        <form id="contactForm" novalidate>
+          <label>
+            Nome
+            <input type="text" name="name" id="name" required />
+          </label>
+
+          <label>
+            E-mail
+            <input type="email" name="email" id="email" required />
+          </label>
+
+          <label>
+            Telefone
+            <input type="tel" name="phone" id="phone" />
+          </label>
+
+          <label>
+            Mensagem
+            <textarea name="message" id="message" rows="6" required></textarea>
+          </label>
+
+          <div class="form-actions">
+            <button class="btn" type="submit">Enviar</button>
+            <button class="btn btn-outline" type="reset">Limpar</button>
+          </div>
+
+          <p id="formMsg" class="form-msg" aria-live="polite"></p>
+        </form>
+      </section>
+
+      <aside class="contact-info reveal">
+        <h3>Nosso contato</h3>
+        <p>Email: <a href="mailto:comercial@gotrackrastreamento.com.br">comercial@gotrackrastreamento.com.br</a></p>
+        <p>Email: <a href="mailto:financeiro@gotrackrastreamento.com.br">financeiro@gotrackrastreamento.com.br</a></p>
+        <p>Telefone: (85) 4141-78310</p>
+        <p>Telefone: (85) 99231-3244</p>
+        <h4>Atendimento via WhatsApp</h4>
+        <p><a href="https://wa.me/558541417831" target="_blank" rel="noopener">Chat no WhatsApp</a></p>
+        <h4>Endereço</h4>
+        <p>Rua Manoel Antonio Leite, Bonsucesso - Fortaleza - Ceará</p>
+      </aside>
+    </div>
+  </main>
 
     <!-- FAQ -->
     <section class="section" id="faq">
@@ -577,18 +719,82 @@
         </div>
     </section>
 
+    <!--SOBRE-->
+    <section class="about" id="sobre">
+  <div class="about-container">
 
+    <div class="about-grid">
 
+      <!-- TEXTO -->
+      <div class="about-text">
+        <h2>Sobre a GoTrack</h2>
 
-    <!-- CTA final -->
-    <section class="cta wrap">
-        <h2><b> Vamos proteger seu veículo?</b></h2>
-        <div class="cta-actions">
-            <a class="btn btn-lg" href="contato.html">Solicitar orçamento</a>
-            <a class="btn btn-outline" href="area-cliente.html" target="_blank" rel="noopener">Entrar na Área do
-                Cliente</a>
+        <p class="about-lead">
+          Segurança veicular com tecnologia, atendimento humano e suporte de verdade.
+        </p>
+
+        <p>
+          A GoTrack nasceu com um objetivo simples: entregar rastreamento veicular confiável,
+          com suporte rápido e soluções que realmente funcionam no dia a dia.
+        </p>
+
+        <p>
+          Aqui o cliente não fica sozinho. Seja no plano de auto gestão ou no plano com mensalidade,
+          você tem acesso a um sistema completo, aplicativo e orientação profissional.
+        </p>
+
+        <div class="about-points">
+          <div class="about-point">✅ Atendimento humanizado</div>
+          <div class="about-point">✅ Tecnologia confiável</div>
+          <div class="about-point">✅ Instalação com técnico indicado</div>
+          <div class="about-point">✅ Central e suporte para quem quer tranquilidade</div>
         </div>
-    </section>
+
+        <div class="about-actions">
+          <a href="#planos" class="about-btn about-btn-solid">Ver Planos</a>
+          <a href="#contato" class="about-btn about-btn-outline">Falar com a GoTrack</a>
+        </div>
+      </div>
+
+      <!-- BLOCO VISUAL -->
+      <div class="about-box">
+        <h3>Por que escolher a GoTrack?</h3>
+
+        <div class="about-stats">
+          <div class="stat">
+            <strong>24h</strong>
+            <span>Suporte e central<br>no plano mensal</span>
+          </div>
+
+          <div class="stat">
+            <strong>App</strong>
+            <span>Android e iOS<br>em tempo real</span>
+          </div>
+
+          <div class="stat">
+            <strong>100%</strong>
+            <span>Controle e gestão<br>na palma da mão</span>
+          </div>
+
+          <div class="stat">
+            <strong>Rápido</strong>
+            <span>Instalação com técnico<br>indicado</span>
+          </div>
+        </div>
+
+        <div class="about-note">
+          <strong>Dica:</strong> se você quer economia e autonomia, o Auto Gestão é perfeito.
+          Se você quer tranquilidade total, o plano mensal é o ideal.
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+   
 
 
 
@@ -709,7 +915,7 @@
             <!-- Copyright -->
             <div class="border-t border-gray-700 mt-8 pt-6 text-center">
                 <p class="text-sm text-gray-400">
-                    © 2025 GoTrack Rastreamento. Todos os direitos reservados.
+                    © 2026 GoTrack Rastreamento. Todos os direitos reservados.
                 </p>
             </div>
         </div>
